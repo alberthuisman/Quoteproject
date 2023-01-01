@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TCP Quote-project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bc87647ef.js" crossorigin="anonymous"></script>
+  </head>
+  <body onload="flyIn()">
+    <div class="container">
+    <div class="flex-container">
+      
+      <nav class="nav-bar" id="header">    
+        <h3>Three cool peeps</h3>
+        <div class="nav-buttons">
+          <a href="index.html">Quote</a>
+          <a href="about.html">About</a>
+          <a onclick="openForm()">Contact</a>
+        </div>
+
+        <div class="menu-button">
+          <div class="menu-btn-burger"></div>
+            <ul class="mobile-menu">
+              <li><a href="index.html">Quote</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a onclick="openForm()">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+      
+    <div class="about-container">
+      <h3 class="about-title">The TCP are...</h3>
+      
+        <div class="introducing hidden first">
+          <div class="image-container">
+          <img class="mimo" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Mimo_Logo.png">
+          </div>
+        <div class="text-container">
+          <h3 class="name">Alaa</h3>
+          <p class="description">
+            <em>Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor incididunt 
+              ut labore et dolore magna aliqua. </em>
+          </p>
+        </div>
+      </div>
+
+      <div class="introducing hidden second">
+        <div class="image-container">
+          <img class="mimo" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Mimo_Logo.png">
+        </div>
+        <div class="text-container">
+          <h3 class="name">Diego</h3>
+          <p class="description">
+            <em>Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor incididunt 
+              ut labore et dolore magna aliqua. </em>
+          </p>
+        </div>
+      </div>
+    
+      <div class="introducing hidden third">
+        <div class="image-container">
+          <img class="mimo" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Mimo_Logo.png">
+
+        </div>
+        <div class="text-container">
+          <h3 class="name">Albert</h3>
+          <p class="description">
+            <em>Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor incididunt 
+              ut labore et dolore magna aliqua. </em></p>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <a href="https://www.instagram.com">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.github.com">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.twitter.com">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+    </footer>
+
+      <div class="form-popup" id="myForm">
+       <form class="form-container" onsubmit="event.preventDefault(); validateForm()">
+         <h1>Contact us</h1>
+         
+         <label for="name"><b>Name</b></label>
+         <input id="nameInput" type="text" placeholder="Fill in your name" name="name">
+         <small class="alert"></small>
+         
+         <label for="email"><b>Email</b></label>
+         <input id="emailInput" type="email" placeholder="Enter Email" name="email">
+         <small class="alert"></small>
+
+         <label for="message"><b>Message</b></label>
+         <textarea id="message" placeholder="Type your message here" rows="6"></textarea>
+         <small class="alert"></small>
+
+         <div class="btn-container">
+         <button type="submit" class="btn">Submit</button>
+         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+         </div>
+         
+         <h3 id="thanks"></h3>
+       </form>
+      </div>
+    
+    </div>
+    </div>
+    
+    <script src="script2.js"></script>
+  </body>
+  </html>
