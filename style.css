@@ -629,6 +629,14 @@ input:-webkit-autofill {
     align-items: center;
   }
 
+  .outer-quote {
+    padding: 0 10px;
+  }
+
+  #quote-container {
+    min-width: 220px;
+  }
+
   .buttons-container {
     position: static;
   }
