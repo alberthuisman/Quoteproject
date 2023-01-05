@@ -628,6 +628,10 @@ input:-webkit-autofill {
     justify-content: center;
     align-items: center;
   }
+
+  .buttons-container {
+    position: static;
+  }
 }
 
 @media screen and (max-width : 500px) {
