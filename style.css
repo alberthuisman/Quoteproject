@@ -616,7 +616,7 @@ input:-webkit-autofill {
 
 /* Media queries for smart phones */
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .time-date-container {
     display: none;
   }
