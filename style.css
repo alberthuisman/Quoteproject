@@ -616,7 +616,21 @@ input:-webkit-autofill {
 
 /* Media queries for smart phones */
 
-  @media screen and (max-width : 500px) {
+@media (max-width: 350px) {
+  .time-date-container {
+    display: none;
+  }
+
+  footer {
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width : 500px) {
     body {
       height: 100%;
     }
