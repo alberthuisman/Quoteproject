@@ -321,13 +321,11 @@ let windowWidth = window.innerWidth;
 let bringQuoteBtn = document.getElementById("quote-btn");
 
 bringQuoteBtn.addEventListener("click", () => {
-    let page = Math.floor(Math.random() * 7268);
-    let randomNumber = Math.ceil(Math.random()*10);
-    fetch(`https://quote-garden.herokuapp.com/api/v3/quotes?page=${page}`)
+    fetch("https://api.quotable.io/random")
       .then((response) => response.json())
       .then((data) => {
-        let quote = data.data[randomNumber].quoteText;
-        let author = data.data[randomNumber].quoteAuthor;
+        let quote = data.content;
+        let author = data.author;
         quoteSection.innerHTML = quote;
         authorSection.innerHTML = author;
         if (quote.length > 250) {
